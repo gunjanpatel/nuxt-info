@@ -1,4 +1,4 @@
-# GunjanPatel.info
+# GunjanPatel.info ![Build](https://github.com/gunjanpatel/nuxt-info/actions/workflows/ci.yml/badge.svg?branch=main)
 
 ## Build Setup
 
