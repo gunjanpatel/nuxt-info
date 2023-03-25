@@ -25,5 +25,8 @@
     "jest-environment-jsdom": "^29.1.2",
     "postcss": "^8.4.17",
     "vue-jest": "^3.0.4"
+  },
+  "overrides": {
+    "@nuxt/kit": "3.0.0-rc.12"
   }
 }
