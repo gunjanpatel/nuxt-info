@@ -1,8 +1,8 @@
 ---
-title: My first Blog Post
-description: Learning how to use @nuxt/content to create a blog
+title: My second Blog Post
+description: Second blog post
 img: https://images.unsplash.com/photo-1679673177212-8a011a4f86f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80
-alt: my first blog post
+alt: second blog post
 author:
   name: Gunjan
   bio: All about Gunjan
