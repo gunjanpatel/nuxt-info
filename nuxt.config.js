@@ -52,5 +52,14 @@ export default {
         },
       },
     },
+  },
+
+  // Content Configuration
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-one-dark.css'
+      }
+    }
   }
 }
