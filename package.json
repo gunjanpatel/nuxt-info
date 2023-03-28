@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "NUXT_APP_BASE_URL=./ nuxt generate",
+    "generate": "NUXT_APP_BASE_URL=/nuxt-info/ nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
