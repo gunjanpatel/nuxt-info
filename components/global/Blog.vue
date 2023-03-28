@@ -13,7 +13,7 @@
           </div>
           <div class="group relative w-full text-center">
             <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-              <a :href="post._path.replace(/^\//g, '')">
+              <a :href="post._path">
                 <span class="absolute inset-0"/>
                 {{ post.title }}
               </a>

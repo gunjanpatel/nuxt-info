@@ -81,7 +81,7 @@ import {Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIte
 import {Bars3Icon, BellIcon, XMarkIcon} from '@heroicons/vue/24/outline'
 
 const navigation = [
-  {name: 'About', href: 'about', current: true},
-  {name: 'Blog', href: 'blog', current: false},
+  {name: 'About', href: '/about', current: true},
+  {name: 'Blog', href: '/blog', current: false},
 ]
 </script>
