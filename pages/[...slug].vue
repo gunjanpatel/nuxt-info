@@ -1,9 +1,10 @@
 <template>
-  <main class="shadow-lg mb-4 dark:text-slate-400 dark:bg-gray-900 h-screen">
+  <main class="shadow-lg mb-4 dark:text-white dark:bg-gray-900 h-screen">
     <Navbar />
     <ContentDoc>
-      <template #not-found> <h1>Page not found</h1> </template>
-      <template #empty></template>
+      <template #not-found><PageNotFound /></template>
+      <template #empty><Empty /></template>
     </ContentDoc>
+    <Copyright />
   </main>
 </template>

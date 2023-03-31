@@ -2,5 +2,3 @@
 title: Blogs
 ---
 ::Blog
-::
-
