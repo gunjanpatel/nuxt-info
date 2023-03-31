@@ -13,9 +13,9 @@
           </div>
           <div class="group relative w-full text-center">
             <h3 class="mt-3 text-lg font-semibold leading-6 group-hover:text-gray-600">
-              <NuxtLink :to="post._path">
+              <a :href="nuxtApp.$getUrl(post._path)">
                 {{ post.title }}
-              </NuxtLink>
+              </a>
             </h3>
             <p class="mt-5 text-sm leading-6 text-gray-400 line-clamp-3">{{ post.description }}</p>
           </div>
@@ -31,5 +31,12 @@
 </template>
 
 <script setup>
-const {data: posts} = await useAsyncData('posts-list', () => queryContent('/blog').where({title: { $not : "Blogs" }}).sort({date: 1}).find())
+const nuxtApp = useNuxtApp()
+const {data: posts} = await useAsyncData(
+  'posts-list',
+  () => queryContent('/blog')
+            .where({title: { $not : "Blogs" }})
+            .sort({date: 1})
+            .find()
+)
 </script>
