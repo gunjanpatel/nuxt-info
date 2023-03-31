@@ -9,8 +9,6 @@
 
     <nuxt-content :document="article" />
 
-    <author :author="article.author" />
-
     <tags :tags="article.tags" />
 
     <prev-next :prev="prev" :next="next" />
