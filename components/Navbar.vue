@@ -77,11 +77,12 @@
 </template>
 
 <script setup>
-import {Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems} from '@headlessui/vue'
-import {Bars3Icon, BellIcon, XMarkIcon} from '@heroicons/vue/24/outline'
+import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/vue'
+import {Bars3Icon, XMarkIcon} from '@heroicons/vue/24/outline'
 
+const nuxtApp = useNuxtApp()
 const navigation = [
-  {name: 'About', href: '/about', current: true},
-  {name: 'Blog', href: '/blog', current: false},
+  {name: 'About', href: nuxtApp.$getUrl('/about'), current: true},
+  {name: 'Blog', href: nuxtApp.$getUrl('/blog'), current: false},
 ]
 </script>
