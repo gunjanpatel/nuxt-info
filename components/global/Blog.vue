@@ -13,10 +13,9 @@
           </div>
           <div class="group relative w-full text-center">
             <h3 class="mt-3 text-lg font-semibold leading-6 group-hover:text-gray-600">
-              <a :href="post._path">
-                <span class="absolute inset-0"/>
+              <NuxtLink :to="post._path">
                 {{ post.title }}
-              </a>
+              </NuxtLink>
             </h3>
             <p class="mt-5 text-sm leading-6 text-gray-400 line-clamp-3">{{ post.description }}</p>
           </div>
