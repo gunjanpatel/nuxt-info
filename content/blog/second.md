@@ -8,6 +8,7 @@ author:
   bio: All about Gunjan
   imageUrl: https://gravatar.com/avatar/a71d5c71e4c2236145ec0b8058bf9508?s=64
 date: 28th March 2023
+layout: blog
 tags:
   - Frontend
   - Nuxt

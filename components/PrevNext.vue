@@ -1,22 +1,22 @@
 <template>
   <div class="flex justify-between mt-20">
-    <ButtonLink
+    <a
       v-if="prev"
       :href="nuxtApp.$getUrl(next._path)"
-      class="bg-indigo-200 hover:underline"
+      class="hover:underline text-indigo-400 font-bold hover:text-indigo-100"
     >
       <span aria-hidden="true">←</span>
       {{ prev.title }}
-    </ButtonLink>
-    <ButtonLink
+    </a>
+    <a
       v-if="next"
       :href="nuxtApp.$getUrl(next._path)"
-      class="bg-indigo-200 hover:underline"
+      class="hover:underline text-indigo-400 hover:text-indigo-100"
     >
       {{ next.title }}
       <span aria-hidden="true">→</span>
 
-    </ButtonLink>
+    </a>
   </div>
 </template>
 
