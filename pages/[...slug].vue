@@ -34,7 +34,6 @@ useHead({
 })
 
 const { page } = useContent()
-
 const {path} = useRoute()
 const {prev, next} = useContent()
 const nuxtApp = useNuxtApp()

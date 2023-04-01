@@ -2,7 +2,7 @@
   <div class="flex justify-between mt-20">
     <ButtonLink
       v-if="prev"
-      :href="prev._path"
+      :href="nuxtApp.$getUrl(next._path)"
       class="bg-indigo-200 hover:underline"
     >
       <span aria-hidden="true">←</span>
@@ -10,7 +10,7 @@
     </ButtonLink>
     <ButtonLink
       v-if="next"
-      :href="next._path"
+      :href="nuxtApp.$getUrl(next._path)"
       class="bg-indigo-200 hover:underline"
     >
       {{ next.title }}
@@ -20,6 +20,9 @@
   </div>
 </template>
 
+<script setup>
+const nuxtApp = useNuxtApp()
+</script>
 <script>
 export default {
   props: {
