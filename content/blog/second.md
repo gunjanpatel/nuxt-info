@@ -1,5 +1,5 @@
 ---
-title: My second Blog Post
+title: Second
 description: Second blog post
 imageUrl: https://images.unsplash.com/photo-1679673177212-8a011a4f86f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80
 alt: second blog post
@@ -7,7 +7,7 @@ author:
   name: Gunjan
   bio: All about Gunjan
   imageUrl: https://gravatar.com/avatar/a71d5c71e4c2236145ec0b8058bf9508?s=64
-date: 28th March 2023
+date: 2th March 2023
 layout: blog
 tags:
   - Frontend
