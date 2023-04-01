@@ -2,7 +2,7 @@
   <main class="shadow-lg mb-4 dark:text-white">
     <Navbar/>
     <div class="mx-auto gap-x-8 gap-y-16 lg:max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-20 xl:col-span-3 2xl:col-span-3">
-      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-8">{{ data.title }}</h2>
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-8">{{ page.title }}</h2>
       <div class="grid grid-cols-4 items-start">
         <div class="col-span-4 md:col-span-3 lg:col-span-3 lg:pr-8">
           <ContentDoc>
@@ -33,12 +33,10 @@ useHead({
   }
 })
 
+const { page } = useContent()
+
 const {path} = useRoute()
 const {prev, next} = useContent()
-const {data} = await useAsyncData(`content-${path}`, () => {
-  return queryContent()
-    .where({_path: path}).only(['title']).findOne()
-})
 const nuxtApp = useNuxtApp()
 nuxtApp.provide(
   'getUrl',
