@@ -13,6 +13,7 @@
               <Empty/>
             </template>
           </ContentDoc>
+          <prev-next :prev="prev" :next="next" />
         </div>
         <div class="col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
           <Sidebar />
@@ -32,8 +33,15 @@ useHead({
 
 const { path } = useRoute()
 const { data } = await useAsyncData(`content-${path}`, () => {
-  return queryContent().where({ _path: path }).only(['title']).findOne()
+  return queryContent()
+    .where({ _path: path }).only(['title']).findOne()
 })
+
+const [prev, next] = await queryContent()
+  .only(['_path', 'title'])
+  .sort({ date: 1})
+  .where({title: {$not: "Blogs"}})
+  .findSurround('content/blog/first')
 
 const nuxtApp = useNuxtApp()
 nuxtApp.provide(
