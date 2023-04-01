@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },*/
   content: {
+    documentDriven: true,
     highlight: {
       theme: "monokai",
       preload: ['diff', 'json', 'js', 'ts', 'css', 'shell', 'html', 'md', 'yaml', 'php']

@@ -1,21 +1,22 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between mt-20">
     <NuxtLink
       v-if="prev"
-      :to="{ name: 'blog-slug', params: { slug: prev._path } }"
-      class="font-bold text-primary hover:underline"
+      :to="prev._path"
+      class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:underline"
     >
+      <span aria-hidden="true">←</span>
       {{ prev.title }}
     </NuxtLink>
-    <span v-else>&nbsp;</span>
     <NuxtLink
       v-if="next"
-      :to="{ name: 'blog-slug', params: { slug: next._path } }"
-      class="font-bold hover:underline"
+      :to="next._path"
+      class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:underline"
     >
       {{ next.title }}
+      <span aria-hidden="true">→</span>
+
     </NuxtLink>
-    <span v-else>&nbsp;</span>
   </div>
 </template>
 
