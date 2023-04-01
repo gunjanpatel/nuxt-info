@@ -1,6 +1,6 @@
 <template>
   <div class="col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1 lg:pl-10 lg:border-l-2 lg:border-gray-800">
-  <TheTitle>Other posts</TheTitle>
+  <TheTitle>My Blogs</TheTitle>
   <ul class="list-none">
     <li v-for="post in posts" class="my-2 py-5 border-b border-gray-200">
       <a :href="nuxtApp.$getUrl(post._path)">{{ post.title }}</a>
