@@ -46,7 +46,7 @@ nuxtApp.provide(
   }
 )
 const isBlogPage = (path) => {
-  const pattern = /^\/blog\/.*/;
+  const pattern = /^\/blog\/(\w+)/;
   return pattern.test(path);
 }
 </script>
