@@ -1,5 +1,6 @@
 ---
 title: About Me
+show_heading: true
 ---
 I am Joomler from Ahmedabad, Gujarat, India. 
 Active contributor and volunteer of Joomla! Project. 

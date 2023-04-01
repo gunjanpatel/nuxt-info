@@ -6,7 +6,10 @@
 useHead({
   bodyAttrs: {
     class: 'dark:bg-gray-900 dark:text-white'
-  }
+  },
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+  ]
 })
 
 const nuxtApp = useNuxtApp()
