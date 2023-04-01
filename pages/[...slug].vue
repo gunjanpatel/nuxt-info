@@ -2,8 +2,8 @@
   <main class="shadow-lg mb-4 dark:text-white">
     <Navbar/>
     <div class="">
-      <div class="mx-auto grid grid-cols-4 max-w-2xl items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
-        <div class="col-span-3 md:col-span-2 lg:col-span-3 xl:col-span-3 2xl:col-span-3 lg:pr-10 lg:border-r-2 lg:border-gray-800">
+      <div class="mx-auto grid grid-cols-4 max-w-2xl items-center gap-x-8 gap-y-16 px-4 py-20 sm:px-6 sm:py-20 lg:max-w-7xl lg:px-8">
+        <div class="col-span-4 md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3 lg:pr-10 lg:border-r-2 lg:border-gray-800">
           <TheTitle>{{ data.title }}</TheTitle>
           <ContentDoc>
             <template #not-found>
@@ -15,7 +15,7 @@
           </ContentDoc>
           <prev-next :prev="prev" :next="next" />
         </div>
-        <div class="col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
+        <div class="col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
           <Sidebar />
         </div>
       </div>

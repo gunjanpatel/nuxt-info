@@ -46,9 +46,11 @@
 import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/vue'
 import {Bars3Icon, XMarkIcon} from '@heroicons/vue/24/outline'
 
+const { path } = useRoute()
 const nuxtApp = useNuxtApp()
 const navigation = [
-  {name: 'About', href: nuxtApp.$getUrl('/about'), current: true},
+  {name: 'About', href: nuxtApp.$getUrl('/about'), current: false},
   {name: 'Blog', href: nuxtApp.$getUrl('/blog'), current: false},
 ]
+navigation.map(link => link.current = path.includes(link.href))
 </script>

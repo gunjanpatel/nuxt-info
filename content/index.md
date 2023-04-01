@@ -1,5 +1,4 @@
 ---
-title: Gunjan Patel | Info
+title: Gunjan Patel
 description: The personal website of Gunjan Patel
 ---
-## Home
