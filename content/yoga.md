@@ -1,5 +1,5 @@
 ---
-title: Articles
+title: Yoga
 show_heading: true
 ---
-::Blog
+

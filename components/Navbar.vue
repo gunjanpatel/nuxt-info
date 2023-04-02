@@ -50,6 +50,7 @@ const { path } = useRoute()
 const nuxtApp = useNuxtApp()
 const navigation = [
   {name: 'About', href: nuxtApp.$getUrl('/about'), current: false},
+  {name: 'Yoga', href: nuxtApp.$getUrl('/yoga'), current: false},
   {name: 'Blog', href: nuxtApp.$getUrl('/blog'), current: false},
 ]
 navigation.map(link => link.current = path.includes(link.href))

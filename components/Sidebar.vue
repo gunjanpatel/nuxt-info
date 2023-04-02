@@ -7,13 +7,16 @@
   </ul>
 </template>
 <script setup>
+const { page } = useContent()
 const nuxtApp = useNuxtApp()
 const {data: posts} = await useAsyncData(
   'posts-list',
   () => queryContent('/blog')
-    .where({title: {$not: "Blogs"}})
+    .where({layout: {$eq: "blog"}})
     .sort({date: 1})
     .find()
+
 )
 
+console.log(posts)
 </script>
